@@ -1,5 +1,5 @@
 {
-  "name": "ui-components",
+  "name": "@aiwizo/ui-components",
   "version": "0.0.1",
   "description": "React UI components",
   "main": "lib/index.js",
@@ -25,12 +25,26 @@
     "url": "https://github.com/Aiwizo/ui-components/issues"
   },
   "homepage": "https://github.com/Aiwizo/ui-components#readme",
+  "dependencies": {
+    "@codewell/component-map": "^0.3.0",
+    "@codewell/defer": "^0.0.3",
+    "@codewell/is-defined": "^2.0.0",
+    "@codewell/render-gate": "^0.0.2",
+    "@codewell/state-logger": "^1.1.0",
+    "@codewell/super-search": "^1.0.0",
+    "@codewell/target-value": "^0.1.1",
+    "prop-types": "^15.7.2"
+  },
   "devDependencies": {
     "@aiwizo/application-styles": "^0.0.4",
     "@babel/core": "^7.14.5",
     "@babel/plugin-transform-runtime": "^7.14.5",
     "@babel/preset-env": "^7.14.5",
     "@babel/preset-react": "^7.14.5",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-regular-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "@rollup/plugin-babel": "^5.3.0",
     "@rollup/plugin-commonjs": "^19.0.0",
     "@rollup/plugin-node-resolve": "^13.0.0",
@@ -38,11 +52,31 @@
     "@storybook/addon-essentials": "^6.2.9",
     "@storybook/addon-links": "^6.2.9",
     "@storybook/react": "^6.2.9",
+    "axios": "^0.21.1",
+    "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
+    "eslint": "^7.28.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
     "prettier": "^2.3.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "rollup": "^2.51.2",
     "rollup-plugin-peer-deps-external": "^2.2.4",
-    "styled-components": "^5.3.0"
+    "styled-components": "^5.3.0",
+    "uuid": "^3.4.0"
+  },
+  "peerDependencies": {
+    "@aiwizo/application-styles": ">= 0.0.4",
+    "@fortawesome/fontawesome-svg-core": ">= 1.2.35",
+    "@fortawesome/free-regular-svg-icons": ">= 5.15.3",
+    "@fortawesome/free-solid-svg-icons": ">= 5.15.3",
+    "@fortawesome/react-fontawesome": ">= 0.1.14",
+    "axios": ">= 0.21.1",
+    "react": ">= 17",
+    "react-dom": ">= 17",
+    "styled-components": ">= 5",
+    "uuid": ">= 3"
   }
 }
