@@ -4,7 +4,7 @@
   "description": "React UI components",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "rollup --config",
     "format": "prettier \"**/*.{js,jsx,css,md}\" --write",
     "start": "start-storybook -p 6006",
@@ -59,6 +59,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
+    "jest": "^27.0.4",
     "prettier": "^2.3.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
