@@ -1,36 +1,40 @@
-import React from 'react';
-
-import { Button } from './Button';
+import { faAddressBook } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
+import { Button } from "..";
 
 export default {
-  title: 'Example/Button',
+  title: "Button",
   component: Button,
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
 };
 
-const Template = (args) => <Button {...args} />;
+// eslint-disable-next-line react/jsx-props-no-spreading
+const Template = (args) => (
+  <Button {...args}>
+    <FontAwesomeIcon icon={faAddressBook} /> Lorem
+  </Button>
+);
 
 export const Primary = Template.bind({});
-Primary.args = {
-  primary: true,
-  label: 'Button',
-};
-
+export const PrimaryRed = Template.bind({});
+export const PrimaryGreen = Template.bind({});
+export const PrimaryBlue = Template.bind({});
 export const Secondary = Template.bind({});
+
+Primary.args = {};
+
+PrimaryRed.args = {
+  color: "red",
+};
+
+PrimaryGreen.args = {
+  color: "green",
+};
+
+PrimaryBlue.args = {
+  color: "blue",
+};
+
 Secondary.args = {
-  label: 'Button',
-};
-
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
-  label: 'Button',
-};
-
-export const Small = Template.bind({});
-Small.args = {
-  size: 'small',
-  label: 'Button',
+  type: "secondary",
 };
