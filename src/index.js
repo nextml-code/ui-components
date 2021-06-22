@@ -6,3 +6,4 @@ export { FileUpload } from "./components/FileUpload";
 export { Input } from "./components/Input";
 export { Label } from "./components/Label";
 export { Select } from "./components/Select";
+export { Login } from "./components/Login";
