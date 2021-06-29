@@ -33,7 +33,7 @@ export const FileDropZone = ({
     >
       <DropZoneLabel htmlFor={id}>
         {state.isDragging ? activeText : passiveText}
-        <StyledInput type="file" id={id} onChange={onChange} multiple />
+        <StyledInput type="file" id={id} multiple />
       </DropZoneLabel>
     </DropZoneWrapper>
   );
