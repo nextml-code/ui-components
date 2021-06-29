@@ -11,7 +11,7 @@ export default {
 const Template = (args) => <FileUpload {...args} />;
 
 const commonArgs = {
-  url: "http://localhost:8080/files",
+  url: "http://localhost:8080/files/dontsave",
   onUploadResponse: (fileUploadResponse, fileData) => {
     console.log(fileUploadResponse, fileData);
   },
