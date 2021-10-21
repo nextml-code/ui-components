@@ -36,7 +36,12 @@ const EmptyOption = styled.div`
 export const Options = ({ dispatch, options, renderAs, onSelect }) => {
   return (
     <OptionsWrapper>
-      <EmptyOption onClick={defer(dispatch, { type: "RESET_FILTER" })}>
+      <EmptyOption
+        onClick={() => {
+          dispatch({ type: "RESET_FILTER" });
+          onSelect(null);
+        }}
+      >
         Select an option...
       </EmptyOption>
       <ComponentMap
